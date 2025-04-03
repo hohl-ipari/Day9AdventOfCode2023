@@ -213,7 +213,7 @@ namespace Day9AdventOfCode2023
 
             foreach (string line in lines)
             {
-                Console.WriteLine($"The next value for the sequence {line} is ");
+                //Console.WriteLine($"The next value for the sequence {line} is ");
                 List <List<int>> allNumbers = new List<List<int>>();
                 allNumbers.Add(line.Trim().Split(' ').Select(int.Parse).ToList());
 
@@ -241,7 +241,7 @@ namespace Day9AdventOfCode2023
                 {
                     finalValue += numbers.Last();
                 }
-                Console.WriteLine($"{finalValue}");
+               // Console.WriteLine($"{finalValue}");
                 total += finalValue;
             }
 
