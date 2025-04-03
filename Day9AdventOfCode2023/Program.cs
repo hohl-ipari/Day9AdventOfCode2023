@@ -248,59 +248,5 @@ namespace Day9AdventOfCode2023
             Console.WriteLine($"Total: {total}");
         }
     }
-
-  /*  class Program
-    {
-        static void Main()
-        {
-            // Sample input as a 2D array of sequences
-            int[][] sequences = new int[][]
-            {
-                new int[] { 0, 3, 6, 9, 12, 15 },
-                new int[] { 1, 3, 6, 10, 15, 21 },
-                new int[] { 10, 13, 16, 21, 30, 45 }
-            };
-
-            // Sum of extrapolated next values
-            int sum = 0;
-
-            foreach (var sequence in sequences)
-            {
-                sum += FindNextValue(sequence);
-            }
-
-            Console.WriteLine($"The sum of the extrapolated values is: {sum}");
-        }
-
-        // Method to find the next value of a given sequence
-        static int FindNextValue(int[] sequence)
-        {
-            string printSequence = "";
-            for (int i = 0; i <= sequence.Length - 1; i++)
-                printSequence = printSequence + ", " + sequence[i];
-            Console.WriteLine($"printSequence {printSequence}");
-            var currentSequence = sequence.ToList();
-
-            
-
-            while (currentSequence.Count > 1)
-            {
-
-                var differences = new List<int>();
-
-                for (int i = 0; i < currentSequence.Count - 1; i++)
-                {
-                    differences.Add(currentSequence[i + 1] - currentSequence[i]);
-                }
-
-                currentSequence = differences;
-            }
-
-            // Current sequence is now a list of zeros, find the next value
-            int nextValue = sequence.Last() + currentSequence.First();
-            Console.WriteLine($"The next value for the {printSequence} is {nextValue}");
-            return nextValue;
-        }
-    }*/
 }
 
